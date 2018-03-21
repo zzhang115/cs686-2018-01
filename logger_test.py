@@ -11,7 +11,7 @@ def get_logger(logger_type, log_level):
     from stdout_logger import stdout_logger
 
     if logger_type == 'file':
-        return file_logger(log_level)
+        return file_logger(log_level, "myfile.txt")
     elif logger_type == 'stdout':
         return stdout_logger(log_level)
     else:
